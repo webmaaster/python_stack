@@ -6,16 +6,16 @@
   <title>My App</title>
 </head>
 <body>
-  <h1>Hello {{name}}. How is everything?</h1>
-  <a href="/another_page">Click Here!</a>
-  <a href="/apple"></a>
-<h1>Add Region</h1>
-<form action="/region" method="POST">
-  <p>Name:</p>
-  
+  <h1>Hello World. How is everything?</h1>
+  <a href="name/Gaira">Show Gaira</a>
 
-</form>
-
-  
+  <form action="/process" method="POST">
+    {%csrf_token %}
+    <input type="text" name="name">
+    <br>
+    <input type="text" name="location">
+    <br>
+    <button>Submit</button>
+  </form>
 </body>
 </html>
